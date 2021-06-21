@@ -1,0 +1,413 @@
+.hasTagsView .app-main .XQ_and_QX {
+    min-height: calc(100vh - 50px);
+    .table  {
+        // min-height: calc(100vh - 122px);
+        height: calc(100vh - 122px);
+    }
+    // .navtree {}
+    .editcontainer {
+        min-height: calc(100vh - 82px);
+    }
+}
+.app-main .XQ_and_QX {
+    min-height: calc(100vh - 50px);
+    .table {
+        min-height: calc(100vh - 122px);
+    }
+    .editcontainer {
+        min-height: calc(100vh - 82px);
+    }
+}
+
+
+.XQ_and_QX {
+    background-color: #F8F8F8;
+    height: 100%;
+
+    .list-head {
+        background-color: #F8F8F8;
+        padding-left: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 25px;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        .btns {
+            .el-select {
+                margin-left: 10px;
+                width: 106px;
+            }
+        }
+        .options {
+            display: flex;
+            line-height: 36px;
+            font-size: 14px; 
+            > div {
+                margin-left: 16px;
+                padding-left: 16px;
+                // border-left: 1px solid #dfe6ee;
+                position: relative;
+            }
+            > div:after {
+                content:'';
+                display: block;
+                position: absolute;
+                background-color: #dfe6ee;
+                width: 1px ;
+                height: 16px;
+                left: 0;
+                top: 8px;
+            }
+            .setting {
+                font-size: 18px;
+            }
+            .shitu::after {
+                display: none;
+            }
+            .shitu {
+                span {
+                    color: #8091a5;
+                    i {
+                        margin-right: 12px;
+                    }
+                }
+                b {
+                    font-weight: normal;
+                    color: #444;
+                    display: inline-block;
+                    margin: 0  12px;
+                }
+                position: relative;
+                .drapdown_tit {
+                    font-weight: 700;
+                    font-size: 12px;
+                    color: #b0bac5;
+                    line-height: 20px;
+                    margin: 0;
+                    padding-left: 8px;
+
+                }
+                .submenu {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    height: 145px;
+                    overflow-y: auto;
+                    border-bottom: 1px solid #dfe6ee;
+                    div {
+                        padding: 0 15px;
+                        cursor: pointer;
+                    }
+                    div:hover {
+                        color: #3582fb;
+                        background: #d7e6fe;
+                    }
+                }
+                .selectview {
+                margin: 0 6px;
+                }
+            }
+            .guolv {
+                position: relative;
+                color: #8091a5;
+                cursor: pointer;
+                i {
+                    margin-right: 12px;
+                }
+            }
+            .num {
+                color: #8091a5;
+                span {
+                    color: #444;
+
+                }
+            }
+            .setting {
+                color: #8091a5;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .table {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+        overflow-y: auto;
+        // padding: 0 20px;
+        box-shadow: 0 0 10px rgba(128,145,165,0.2);
+        border-radius: 2px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        background: #fff;
+        border-top: 1px solid #e6e6e6;
+        
+
+        .vxetable {
+            .el-icon-remove-outline , .el-icon-circle-plus-outline{
+                font-size: 16px;
+            }
+            .el-icon-more {
+                transform: rotateZ(90deg);
+            }
+            .moreOuter {
+                i {
+                    display: none;
+                    cursor: pointer;
+                }
+            }
+            .editmenu {
+                position: absolute;
+                top: 40px;
+                box-shadow: 0 0 10px rgba(63,74,86,0.3);
+                padding: 5px 0;
+                background-color: #fff;
+                z-index: 999;
+                width: 114px;
+                .item {
+                    height: 28px;
+                    padding: 0 15px;
+                    line-height: 28px;
+                    cursor: pointer;
+                }
+                .item:hover{
+                    color: #5d9bfc;
+                    background-color: #eaf2ff;
+                }
+                .item.create {
+                    border-top: 1px solid #dfe6ee;
+                }
+            }
+            .vxe-body--row:hover {
+                .moreOuter {
+                    i {
+                        display: block;
+                    }
+                }
+            }
+            .biaotiicon {
+                cursor: pointer;
+            }
+            .edityouxian {
+                position: absolute;
+                width: 150px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(63,74,86,0.3);
+                padding: 15px;
+                border: 1px solid #b0bac5;
+                z-index: 999;
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                }
+                li {
+                    width: 100px;
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 0 10px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    background-color: #f8f8f8;
+                    margin-bottom: 10px;
+                    transition: width linear 0.1s;
+                }
+                li:not(.empty) {
+                    color: #fff;
+                }
+                .high {
+                    background-color: #f85e5e;
+                }
+                .middle {
+                    background-color: #93c36b;
+                }
+                .low , .nice{
+                    background-color: #97afd0;
+                }
+                li:hover {
+                    width: 120px;
+                }
+
+            }
+        }
+
+
+    }
+    .xuqiutable.table {
+        width: calc(100% - 312px);
+        margin-left: 292px;
+    }
+
+    .editcontainer {
+        width: calc(100% - 32px);
+        position: relative;
+        top: 16px;
+        margin-left: 16px;
+        background-color: #fff;
+        
+        border-radius: 2px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.1);
+        .header {
+            padding: 15px 20px;
+            border-bottom: 1px solid #dfe6ee;
+            height: 50px;
+            .select {
+                float: right;
+                .el-dropdown-link {
+                    cursor: pointer;
+                }
+            }
+            >span {
+                display: inline-block;
+                font-size: 16px;
+                color: #363b42;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+        }
+
+        .editouter {
+            border-bottom: 1px solid #dfe6ee;
+            .left {
+                border-right: 1px solid #dfe6ee;
+                padding: 0 20px;
+                .el-input {
+                    margin: 30px 0;
+
+                    .el-input__inner {
+                        border: none;border-bottom: 1px solid #dfe6ee;
+                        font-size: 14px;
+                    }
+                }
+
+            }
+            .right {
+                padding: 0 10px 0 16px;
+                // min-width: 500px;
+                .xuqiuform {
+                    padding: 20px 0;
+                    border-bottom: 1px solid #dfe6ee;
+                    .item {
+                        margin-bottom: 15px;
+                        position: relative;
+                        .el-select {
+                            width: 100%;
+                            height: 30px;
+                        }
+                        .el-input {
+                            width: 80%;
+                            height: 30px;
+                        }
+
+                        >div {
+                            padding-left: 74px;
+                            
+                        }
+                        > span {
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            top: 5px;
+                        }
+                    }
+                }
+                .fujian {
+                    padding: 20px 0;
+                    .title {
+                        font-size: 14px;
+                        color: #3f4a56;
+                        line-height: 22px;
+                        margin-bottom: 20px;
+                    }
+                    .btn {
+                        .tit {
+                            color: #8091a5;
+                            display: inline-block;
+                            margin-right: 30px;
+                        }
+                        .add {
+                            color: #3582fb;
+                            display: inline-block;
+                            font-size: 12px;
+                            cursor: pointer;
+                            i{
+                                font-weight: bold;
+                            }
+
+                        }
+                        
+                    }
+                }
+
+            }
+
+        }
+        .editbtns {
+            padding: 15px 0 20px 20px;
+            .el-button {
+                width: 102px;
+                border-radius: 2px;
+            }
+        }
+
+        
+    }
+
+    .settings_showSelectDialog {
+        .container {
+            padding: 20px 35px 15px 35px;
+            margin: 0;
+
+        }
+    }
+
+
+
+}
+
+.XQ_and_QX.gray {
+    background-color: #e9e9e9;
+}
+
+.XQ_and_QX.editxuqiu {
+    .header {
+        .select {
+            .el-button {
+            }
+        }
+    }
+}
+
+.drapdown_menu {
+    position: absolute;
+    padding: 5px 0 ;
+    background-color: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.3);
+    z-index: 9999;
+    >div{
+            padding: 0 15px;
+            line-height: 2.4;
+            color: #3f4a56;
+            text-align: left;
+            text-decoration: none;
+            white-space: nowrap;
+            font-size: 13px;
+            cursor: pointer;
+    }
+    >div:not(.noHighLight):hover {
+        color: #3582fb;
+        background: #d7e6fe;
+    }
+    .noHighLight {
+        line-height: 22px;
+    }
+    ~ .drapdown_dialog {
+        position: fixed;
+        background-color: transparent;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 1010;
+    }
+}
